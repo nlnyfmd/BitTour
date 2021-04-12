@@ -1,0 +1,110 @@
+@font-face {
+     font-family: 'S-CoreDream-5Medium';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+     font-family: 'S-CoreDream-2ExtraLight';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+     font-family: 'S-CoreDream-6Bold';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+article{
+	font-family: 'S-CoreDream-6Bold';
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+    height: 100vh;
+    padding:0.5in 0;
+}
+article * { 
+	
+	margin-top:10%;
+	margin-bottom:10%;
+	grid-column: start / end; 
+	}
+
+@media (max-width: 8.5in){
+    article { grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr;}
+}
+:root{font:20px/24px;}
+
+body,
+body * {
+    margin:          unset;
+    box-sizing:      unset;
+    padding:         unset;
+    font-size:       unset;
+    color:           unset;
+    text-decoration: unset;
+    
+}
+figure * {
+    display: block;
+}
+
+.size-1{grid-column: 4/5;}
+.size-2{grid-column: 3/6;}
+.size-3{grid-column: 2/7;}
+.size-4{grid-column: 1/8;}
+
+.size-1 img, .size-3 img, .size-4 img, .size-2 img {width: 100%;}
+
+h2, p {
+  margin-bottom: 2.4rem;
+}
+
+h1           { font:700 2.0rem/1.2 "S-CoreDream-6Bold"; color:hsl(000,0%,33%);}
+h2           { font:400 1.5rem/1.2 "S-CoreDream-6Bold"; color:hsl(000,0%,33%);}
+time         { font:700 1.0rem/1.2 "S-CoreDream-6Bold"; color:hsl(250,100%,85%);}
+h3           { font:700 1.0rem/1.2 "S-CoreDream-6Bold"; color:hsl(250,100%,67%);}
+p            { font:400 1.0rem/1.5 "S-CoreDream-6Bold"; color:hsl(000,0%,33%); }
+figcaption p { font:400 1.0rem/1.5 "S-CoreDream-6Bold"; color:hsl(000,0%,83%);}
+a{ box-shadow: inset 0 -0.25em hsl(55,100%,73%);}
+
+@media (max-width: 8.5in){:root {font-size: 16px;}}
+@media (max-width: 5in){:root {font-size: 10px;}}
+
+figcaption{
+    margin-top: 0.5rem;
+    margin-bottom: 2.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    font-size: 0.8rem;
+    color:hsl(250,100%,67%);
+}
+.share{
+    display:flex;
+    justify-content: center;
+}
+    
+.book_btn{
+	font-family: 'S-CoreDream-6Bold';
+    font-size: 1.1rem;
+    background: none;
+    color: rgb(16, 153, 153);
+    border:0px;
+    padding:10px 20px;
+    border-radius: 10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    outline:none;
+    cursor:pointer;
+    transition: all .4s;
+}
+
+.book_btn:hover{
+	background-color: rgb(16, 153, 153);
+    color: white;
+}
+	

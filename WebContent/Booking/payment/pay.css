@@ -1,0 +1,41 @@
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image/booking_bg.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-color: white;
+    display: grid;
+    justify-content: center; 
+    align-items:center;  
+} 
+
+.wrapper1{
+    /* background-color: yellow;  */
+    margin-top: 200px;
+    display: flex;
+    justify-content: center; 
+    align-items:center;  
+    width: 800px;
+}
+
+.booking-form-box
+{  
+    /* background-color: green;  */
+    display: inline-block;
+    max-width: 900px;
+    border: 1px solid white;
+    padding: 10px 30px;
+    color:white;
+    text-align: center;
+}
+
+.booking-form-box > h1
+{
+    margin: auto;
+    text-align: center;
+}
+
+a { text-decoration:none !important } 
+a:hover { text-decoration:none !important }
+
+
